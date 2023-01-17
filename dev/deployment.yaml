@@ -4,9 +4,8 @@ metadata:
   labels:
     app: tuto
   name: tuto
-  namespace: tuto-project
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: tuto

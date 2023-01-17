@@ -4,7 +4,6 @@ metadata:
   name: tuto
   labels:
     app: tuto
-  namespace: tuto-project
 spec:
   type: NodePort
   ports:
