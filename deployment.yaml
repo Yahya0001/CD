@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tuto
+  name: tuto
+  namespace: tuto-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tuto
+  template:
+    metadata:
+      labels:
+        app: tuto
+    spec:
+      containers:
+      - image: allayayahya/tuto:latest
+        name: tuto
+        ports:
+        - containerPort: 5000
